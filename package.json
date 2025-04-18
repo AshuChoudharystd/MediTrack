@@ -1,0 +1,16 @@
+{
+  "name": "medi-track",
+  "version": "1.0.0",
+  "description": "[![MongoDB](https://img.shields.io/badge/MongoDB-Database-green.svg)](https://www.mongodb.com/)\r [![Express](https://img.shields.io/badge/Express-Framework-blue.svg)](https://expressjs.com/)\r [![React](https://img.shields.io/badge/React-Library-61DAFB.svg)](https://reactjs.org/)\r [![Node.js](https://img.shields.io/badge/Node.js-Environment-339933.svg)](https://nodejs.org/)",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "url": "^0.11.4"
+  }
+}
