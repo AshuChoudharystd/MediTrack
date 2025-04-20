@@ -3,10 +3,10 @@ import User from '../models/User.js';
 
 const router = express.Router();
 
-router.post('/signup', async (req, res) => {
+router.post('/', async (req, res) => {
   const { firstName, lastName, email, password, role } = req.body;
 
-  console.log('Received data:', req.body); // Add this line to log the request body
+  console.log('Received data:', req.body);
 
   try {
     const user = new User({ firstName, lastName, email, password, role });

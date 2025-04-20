@@ -9,7 +9,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const router = express.Router();
-
+router.use(express.json());
 router.post('/', async (req, res) => {
   const { email, password, role } = req.body;
 
@@ -28,7 +28,7 @@ router.post('/', async (req, res) => {
     if (!user) {
       return res.status(400).send({ error: 'Invalid email or role' });
     }
-
+    console.log(user);
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {
       return res.status(400).send({ error: 'Invalid password' });
