@@ -40,7 +40,7 @@ const SignUp = () => {
     e.preventDefault();
     if (validateForm()) {
       try {
-        const response = await fetch(BASE_URL + '/', {
+        const response = await fetch(BASE_URL + '/signup', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

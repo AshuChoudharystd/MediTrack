@@ -2,7 +2,6 @@ import express from 'express';
 import dotenv from 'dotenv';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
-
 import Doctor from '../models/Doctor.js';
 import Admin from '../models/Admin.js';
 import User from '../models/User.js';
